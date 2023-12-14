@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="addUser.php" method="post">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+        <label for="username">choose username</label>
+        <input type="text" id="username" name="username" placeholder="user name" required>
+        <label for="password">choose password</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <label for="role">choose role</label>
+        <select name="role" id="role">
+            <option disabled selected >choose role</option>
+            <option value="admin">Admin</option>
+            <option value="librarian">Librarian</option>
+        </select>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+        <input type="submit" value="Add">
+        
+    </form>
+    
+</body>
+</html>

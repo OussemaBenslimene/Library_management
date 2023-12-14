@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <form action="addBook.php" method="post">
+        <label for="id">Book Id</label>
+        <input type="number" id="id" name="id" placeholder="[4]digits" required>
+        
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" placeholder="Book Title" required>
+
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" placeholder="Book Author" required>
+
+        <label for="genre">Genre</label>
+        <select name="genre" id="genre">
+            <option disabled selected>Specify Genre</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Action">Action</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Horror">Horror</option>
+            <option value="Romance">Romance</option>
+            <option value="Biography">Biography</option>
+        </select>
+
+        <label for="pub_date">Publish Date</label>
+        <input type="date" id="pub_date" name="pub_date" required>
+ 
+        <label for="qte">Quantity</label>
+        <input type="number" id="qte" name="qte" placeholder="quantity available" value="0" required>
+
+        <input type="submit" value="Add Book">
+        
+    </form>
+    
+</body>
+</html>
